@@ -1,4 +1,4 @@
 module NoCms::Admin::Events
-  class ApplicationController < ActionController::Base
+  class ApplicationController < NoCms::Admin::ApplicationController
   end
 end
