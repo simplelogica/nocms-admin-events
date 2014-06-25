@@ -17,6 +17,8 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 4.1.1"
+  s.add_dependency "nocms-admin", '~> 0.0', '>= 0.0.1'
+  s.add_dependency "nocms-events", '~> 0.0', '>= 0.0.1'
 
   s.add_development_dependency "sqlite3"
 end
