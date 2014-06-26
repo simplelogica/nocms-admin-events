@@ -2,8 +2,34 @@ en:
   no_cms:
     admin:
       menu_items:
+        events: Events
+        events_root: Events Settings
         locations: Locations
       events:
+        events:
+          content_fields:
+            slug_tooltip: "This field will be appended to %{base} to build the url for this event"
+          create:
+            success: "Event %{title} has been created"
+            error: "Some error was found and Event %{title} couldn't be created"
+          destroy:
+            success: "Event %{title} has been deleted"
+            error: "Some error was found and Event %{title} couldn't be deleted"
+          edit:
+            log_messages: "Event %{title} loaded for editing"
+            submit: 'Send'
+          new:
+            submit: 'Send'
+          event_listing_item:
+            destroy: Remove
+            show: Show Event
+            hide: Mark Event as draft
+          toolbar_right:
+            submit: Save
+            visit: Visit
+          update:
+            success: "Event %{title} has been updated"
+            error: "Some error was found and Event %{title} couldn't be updated"
         locations:
           create:
             success: "Location %{title} has been created"
