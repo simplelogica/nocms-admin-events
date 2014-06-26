@@ -63,7 +63,7 @@ module NoCms::Admin::Events
     end
 
     def location_params
-      location_params = params.require(:location).permit(:name, :description)
+      location_params = params.require(:location).permit(:name, :description, :lat, :lng)
     end
 
   end
