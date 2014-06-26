@@ -1,0 +1,7 @@
+<% current ||= nil %>
+<li <%= raw "class='#{event_listing_item_classes(event, current).join(' ')}'"%>>
+  <%= link_to event.title, edit_event_path(event)%>
+  <div class="mo">
+    <%= button_to '', event_path(event), method: :delete, class: "ico-mini-delete", title: t('.destroy') %>
+  </div>
+</li>
