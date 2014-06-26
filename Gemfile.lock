@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/simplelogica/nocms-admin.git
-  revision: b3422c5a2d7684e9ba44a67785d6e11a2c5a1247
+  revision: 2c3bc0be580ef7e8fa4a32408b33f6997f737c46
   branch: master
   specs:
     nocms-admin (0.0.1)
@@ -25,7 +25,7 @@ PATH
     nocms-admin-events (0.0.1)
       nocms-admin (~> 0.0, >= 0.0.1)
       nocms-events (~> 0.0, >= 0.0.1)
-      rails (~> 4.1.1)
+      rails (~> 4.0, >= 4.0.0)
 
 GEM
   remote: https://rubygems.org/

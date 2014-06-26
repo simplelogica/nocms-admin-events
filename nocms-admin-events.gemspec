@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "rails", "~> 4.1.1"
+  s.add_dependency "rails", "~> 4.0", '>= 4.0.0'
   s.add_dependency "nocms-admin", '~> 0.0', '>= 0.0.1'
   s.add_dependency "nocms-events", '~> 0.0', '>= 0.0.1'
 
