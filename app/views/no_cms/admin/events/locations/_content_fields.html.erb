@@ -1,3 +1,9 @@
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<% content_for :ready_js do %>
+  NoCMS.Admin.Map.init();
+<% end %>
+
 <div id="content_fields">
   <div class="row">
     <%= f.label :name %>
@@ -7,5 +13,10 @@
   <div class="row">
     <%= f.label :description %>
     <%= f.text_area :description %>
+  </div>
+
+  <div class="row">
+    <%= label_tag :address, t('.address') %>
+    <%= f.map_field address: { fake: true }, latitude: { field: :lat }, longitude: { field: :lng } %>
   </div>
 </div>
