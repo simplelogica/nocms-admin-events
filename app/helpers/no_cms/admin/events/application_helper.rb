@@ -1,4 +1,8 @@
-module NoCms::Admin::Events
-  module ApplicationHelper
+module NoCms
+  module Admin
+    module Events
+      module ApplicationHelper
+      end
+    end
   end
 end

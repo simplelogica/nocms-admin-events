@@ -1,0 +1,30 @@
+en:
+  no_cms:
+    admin:
+      menu_items:
+        locations: Locations
+      events:
+        locations:
+          create:
+            success: "Location %{title} has been created"
+            error: "Some error was found and Location %{title} couldn't be created"
+          destroy:
+            success: "Location %{title} has been deleted"
+            error: "Some error was found and Location %{title} couldn't be deleted"
+          edit:
+            log_messages: "Location %{title} loaded for editing"
+            submit: 'Send'
+          new:
+            submit: 'Send'
+          templates:
+            show: Default
+          location_listing_item:
+            destroy: Remove
+            show: Show Location
+            hide: Mark Location as draft
+          toolbar_right:
+            submit: Save
+            visit: Visit
+          update:
+            success: "Location %{title} has been updated"
+            error: "Some error was found and Location %{title} couldn't be updated"
