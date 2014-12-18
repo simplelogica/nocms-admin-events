@@ -14,6 +14,15 @@
     <%= f.collection_select :location_id, NoCms::Events::Location.includes(:translations), :id, :name %>
   </div>
 
+  <div class="row">
+    <%= f.label_with_tooltip :starts_at, { tooltip: t('.starts_at_tooltip')} %>
+    <%= f.datetime_picker :starts_at, format: "yyyy-mm-dd hh:mm:ss",  "date-autoclose" => true,  "minute-step" => "15" %>
+  </div>
+
+  <div class="row">
+    <%= f.label_with_tooltip :ends_at, { tooltip: t('.ends_at_tooltip')} %>
+    <%= f.datetime_picker :ends_at, format: "yyyy-mm-dd hh:mm:ss",  "date-autoclose" => true,  "minute-step" => "15" %>
+  </div>
 
   <div class="row">
     <%= f.label :description %>
