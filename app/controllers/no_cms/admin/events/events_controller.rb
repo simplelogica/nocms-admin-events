@@ -63,7 +63,7 @@ module NoCms::Admin::Events
     end
 
     def event_params
-      event_params = params.require(:event).permit(:title, :slug, :description, :location_id)
+      event_params = params.require(:event).permit(:title, :slug, :description, :location_id, :starts_at, :ends_at)
     end
 
   end
